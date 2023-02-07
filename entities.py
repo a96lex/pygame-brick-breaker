@@ -90,7 +90,11 @@ class Bricks(pygame.sprite.Group):
         if self.wall_height >= 0:
             self.add_brick_line()
             self.wall_height = -EntityConstants.brick.height
-            EntityConstants.game.wall_speed += 0.02
+            EntityConstants.game.wall_speed = min(
+                EntityConstants.game.max_wall_speed,
+                EntityConstants.game.wall_speed
+                + EntityConstants.game.wall_speed_increase,
+            )
 
         self.wall_height += EntityConstants.game.wall_speed
         super().update(*args, **kwargs)

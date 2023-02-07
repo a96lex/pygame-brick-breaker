@@ -17,6 +17,8 @@ class EntityConstants:
     class game:
         wall_speed = 0.1
         powerup_rate = 0.2
+        max_wall_speed = 1.0
+        wall_speed_increase = 0.05
 
     class brick:
         width = 32
