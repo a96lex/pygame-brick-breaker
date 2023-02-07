@@ -1,0 +1,2 @@
+pygame @ git+https://github.com/pygame/pygame.git@a4fb81e1f1c7e71b949d1ecc3be81c6dc1991934
+pygbag==0.6.6
